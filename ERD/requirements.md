@@ -65,4 +65,4 @@
 - **Booking to Payment**: One to one
 
 ## Entity Relationship Diagram
-![ERD Diagram](https://drive.google.com/file/d/1PIWQzjaX9Wxq8yhyjgcQGKJ0Ja0X2ITC/view?usp=sharing)
+![ERD Diagram](./alx-airbnb-erd.jpg)
