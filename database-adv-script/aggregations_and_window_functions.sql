@@ -12,7 +12,8 @@ ORDER BY total_bookings DESC;
 -- they have received.
 
 SELECT p.property_id, p.name, COUNT(b.booking_id) AS total_bookings,
-RANK() OVER (ORDER BY COUNT(b.booking_id) DESC) AS property_rank
+RANK() OVER (ORDER BY COUNT(b.booking_id) DESC) AS property_rank,
+ROW_NUMBER() OVER (ORDER BY COUNT(b.booking_id) DESC) AS property_num
 FROM property p
 LEFT JOIN booking b 
 ON p.property_id = b.property_id
